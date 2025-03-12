@@ -68,3 +68,4 @@ This project utilizes **Google Earth Engine (GEE)** to perform **Land Use/Land C
 #### **Conclusion**:
 This project demonstrates how to classify land use and land cover types using **Sentinel-2 imagery** and **Google Earth Engine**. By utilizing multiple spectral indices and the **Random Forest classifier**, the model achieves enhanced accuracy for land cover classification. This tool can be used for environmental monitoring, urban planning, and land management, providing valuable insights into land use changes over time.
 
+![image alt](https://github.com/IsfacoolGIS/LULC-classification-using-random-forest-in-GEE/blob/main/Jodhpur_LULC_2021.jpg?raw=true)
