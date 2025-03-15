@@ -2,6 +2,12 @@
 
 This project utilizes **Google Earth Engine (GEE)** to perform **Land Use/Land Cover (LULC) classification** using **Sentinel-2** satellite imagery. The classification process incorporates a variety of spectral indices, such as NDVI, NDRE, GVI, and more, to enhance model performance. A **Random Forest classifier** is applied to classify the land cover types, leveraging indices for improved separability and accuracy.
 
+✅ Enhanced Classification Accuracy: Achieved 93.5% accuracy with a Kappa coefficient of 0.912 after hyperparameter tuning.
+✅ Optimized Hyperparameters: Increased the number of trees to 200, adjusted minLeafPopulation for finer splits, and improved bagFraction for better generalization.
+✅ Expanded Spectral Indices: Added new indices, including NDVIre, UVI, UDWI, ENDISI, and UCI, improving land cover separability.
+✅ Stronger Cloud Filtering: Applied a 1% cloud cover threshold, ensuring high-quality input data.
+✅ Robust Training & Validation: Implemented a 70-30 train-test split for improved model evaluation.
+
 #### **Features:**
 🛰️ **Sentinel-2 Data**: Process satellite imagery from the **COPERNICUS/S2_HARMONIZED** collection for the specified region (e.g., Jodhpur, India) between November and December 2021.
 
@@ -23,10 +29,9 @@ This project utilizes **Google Earth Engine (GEE)** to perform **Land Use/Land C
 - **MBI** (Moisture Balance Index)
 - **NDVIre** (Red Edge NDVI)
 
-🎨 **Land Cover Classification**: Train and classify land cover types using a **Random Forest classifier**. The classifier uses spectral indices as input features, with classes including vegetation, bare land, built-up areas, and water bodies.
+🌏 Land Cover Classification: Uses a Random Forest classifier trained with spectral indices to distinguish vegetation, bare land, built-up areas, and water bodies.
 
-🗺️ **Map Visualizations**: Display the classified land cover on an interactive map with customized visualization parameters for each index.
-
+📍 Map Visualizations: Interactive GEE-based maps with customized color palettes for each class.
 🌏 **Export & Area Analysis**: Export the classified map as a **GeoTIFF** and calculate the area of each land cover class for analysis.
 
 #### **How It Works:**
@@ -49,9 +54,6 @@ This project utilizes **Google Earth Engine (GEE)** to perform **Land Use/Land C
    - The classified land cover map is exported as a **GeoTIFF**.
    - Area statistics for each land cover class are calculated and exported for further analysis.
 
-#### **Visualization Example**:
-- **NDVI**, **NDRE**, **MNDWI**, and other indices are visualized with custom color palettes, showcasing different land cover features such as vegetation, urban areas, and water bodies.
-
 #### **Instructions**:
 1. **Setup**:
    - Ensure you have a **Google Earth Engine (GEE)** account and access the **Sentinel-2** data collection.
@@ -67,5 +69,8 @@ This project utilizes **Google Earth Engine (GEE)** to perform **Land Use/Land C
 
 #### **Conclusion**:
 This project demonstrates how to classify land use and land cover types using **Sentinel-2 imagery** and **Google Earth Engine**. By utilizing multiple spectral indices and the **Random Forest classifier**, the model achieves enhanced accuracy for land cover classification. This tool can be used for environmental monitoring, urban planning, and land management, providing valuable insights into land use changes over time.
+
+#### **NOTE**
+Use this code as a reference to create better LULC classification wiht enhanced accuracy, keep in mind that you gotta take samplings for your AOI on your own and then only you can just implement this code.
 
 ![image alt](https://github.com/IsfacoolGIS/LULC-classification-using-random-forest-in-GEE/blob/main/Jodhpur_LULC_2021.jpg?raw=true)
