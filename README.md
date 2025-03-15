@@ -60,11 +60,13 @@ This project utilizes **Google Earth Engine (GEE)** to perform **Land Use/Land C
    
 2. **Define Region of Interest (ROI)**:
    - Specify your region of interest (e.g., Jodhpur, India) and the date range for analysis.
-
-3. **Run the Script**:
+   
+3. **Do the Sampling for your AOI**
+   
+4. **Run the Script**:
    - Copy the provided script into the GEE code editor and run it. The classification and map visualizations will be generated.
 
-4. **Export Results**:
+5. **Export Results**:
    - Export the classified map and area statistics to your **Google Drive** as **GeoTIFF** files.
 
 #### **Conclusion**:
